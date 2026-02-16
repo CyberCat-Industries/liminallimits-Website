@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Limina⅃Limits Music</title>
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Image CSS -->
+    <link rel="stylesheet" href="image-style.css">
+    <script src="timer.js" defer></script>
+</head>
+<body>
+    <section>
+        <div class="navbar">
+            <h1>Limina<span class="flipped-text">L</span>Limits</h1>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">☰</button>
+            <ul class="nav-link" id="navMenu">
+                <li><a href="https://liminallimits.com">Home</a></li>
+                <li><a href="https://liminallimits.com/listen">Listen</a></li>
+                <li><a href="https://liminallimits.com/contact.html">Contact</a></li>
+                <li><a href="https://liminallimits.com/about">About</a></li>
+            </ul>
+        </div>
+    </section>
+    <main>
+        <section class="normal-section">
+            <h2 class="center-pro-h2">Template Page For Development</h2>
+        </section>
+
+    </main>
+    <footer>
+        <p class="copyright">© Copyright 2026 - Liminal Limits under CyberCat Industries. All Rights Reserved</p>
+    </footer>
+    <script>
+        // Hamburger menu toggle
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu');
+        
+        if (hamburger) {
+            hamburger.addEventListener('click', function() {
+                navMenu.classList.toggle('active');
+            });
+        }
+        
+        // Close menu when a link is clicked
+        const navLinks = navMenu.querySelectorAll('a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                navMenu.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>

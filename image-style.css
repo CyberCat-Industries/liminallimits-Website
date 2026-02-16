@@ -1,0 +1,31 @@
+/*images*/
+.logo {
+  width: 25%;
+  height: auto;
+  margin: 20px auto;
+  display: block;
+}
+
+
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 768px) {
+    /*images*/
+    .logo {
+      width: 40%;
+      height: auto;
+      margin: 20px auto;
+      display: block;
+    }
+}
+
+@media (max-width: 480px) {
+    /*images*/
+    .logo {
+      width: 60%;
+      height: auto;
+      margin: 20px auto;
+      display: block;
+    }
+}

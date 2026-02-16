@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 2000 2000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <rect x="0" y="0" width="2000" height="2000"/>
+    <g id="Main">
+        <g transform="matrix(1.861347,0.771301,-0.771301,1.861347,-171.81876,-1542.833897)">
+            <path d="M1020.429,476.744L1350.322,613.389L1486.968,943.282L1350.322,1273.174L1020.429,1409.82L690.537,1273.174L553.891,943.282L690.537,613.389L1020.429,476.744Z" style="fill:white;fill-opacity:0;stroke:white;stroke-width:24.13px;"/>
+        </g>
+        <g transform="matrix(0.998849,0,0,1,0.151422,-868.491104)">
+            <path d="M1000,1000L1868.491,1868.491L1000,2736.982L131.509,1868.491L1000,1000Z" style="fill:white;fill-opacity:0;stroke:white;stroke-width:48.64px;"/>
+        </g>
+        <g transform="matrix(0.3772,0,0,0.3772,208.647754,647.654155)">
+            <g transform="matrix(1,0,0,1,389.439,1117.978)">
+                <text x="0px" y="0px" style="font-family:'Tomorrow-Regular', 'Tomorrow';font-size:417.833px;fill:white;">Limina</text>
+            </g>
+        </g>
+        <g transform="matrix(0.3772,0,0,0.3772,1024.671026,647.654155)">
+            <g transform="matrix(1,0,0,1,389.439,1117.978)">
+                <text x="0px" y="0px" style="font-family:'Tomorrow-Regular', 'Tomorrow';font-size:417.833px;fill:white;">Limits</text>
+            </g>
+        </g>
+        <g transform="matrix(-2.198843,0,0,2.198843,2937.608909,-953.311542)">
+            <g transform="matrix(1,0,0,1,866.899,960.991)">
+                <text x="0px" y="0px" style="font-family:'Tomorrow-LightItalic', 'Tomorrow';font-weight:300;font-style:italic;font-size:347.222px;fill:white;">L</text>
+            </g>
+        </g>
+        <g transform="matrix(2.198843,0,0,2.198843,-916.005487,-953.311542)">
+            <g transform="matrix(1,0,0,1,866.899,960.991)">
+                <text x="0px" y="0px" style="font-family:'Tomorrow-LightItalic', 'Tomorrow';font-weight:300;font-style:italic;font-size:347.222px;fill:white;">L</text>
+            </g>
+        </g>
+    </g>
+</svg>
