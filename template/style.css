@@ -54,6 +54,18 @@
   font-style: italic;
 }
 
+/* Change highlight color for all text */
+::selection {
+  background: #00aeff; /* Highlight background color */
+  color: #000000;         /* Text color when highlighted */
+}
+
+/* For Firefox */
+::-moz-selection {
+  background: #00aeff;
+  color: #000;
+}
+
 
 /*Main Page*/
 * {
