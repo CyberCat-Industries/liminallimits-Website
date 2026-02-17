@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Limina⅃Limits Music | Listen</title>
+    <meta name="description" content="Where to listen to the new album by Liminal Limits" />
+    <meta name="keywords" content="liminallimits, music, listen, Limina⅃Limits, album" />
+    <meta property="og:title" content="Limina⅃Limits Music | Listen" />
+    <meta property="og:description" content="Where to listen to the new album by Liminal Limits" />
+    <meta property="og:image" content="https://liminallimits.com/assets/LL-logo(dark)-v1.svg" />
+    <link rel="icon" href="https://liminallimits.com/assets/LL-logo(dark)-v1.svg" />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Image CSS -->
+    <link rel="stylesheet" href="image-style.css">
+    <!-- Button CSS -->
+    <link rel="stylesheet" href="buttons.css">
+    <script src="timer.js" defer></script>
+</head>
+<body>
+    <section>
+        <div class="navbar">
+            <h1>Limina<span class="flipped-text">L</span>Limits</h1>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">☰</button>
+            <ul class="nav-link" id="navMenu">
+                <li><a href="https://liminallimits.com">Home</a></li>
+                <li><a href="https://liminallimits.com/listen">Listen</a></li>
+                <li><a href="https://liminallimits.com/contact.html">Contact</a></li>
+                <li><a href="https://liminallimits.com/about">About</a></li>
+            </ul>
+        </div>
+    </section>
+    <main>
+        <section class="normal-section">
+            <h2 class="center-pro-h2">Where All Roads Begin By Liminal Limits (Pending Offical Album Name)</h2>
+            <div class="alb-dis">
+                <p class=".smaller-norm">Based on the experinces of flying (in Micorsoft flight sim) over Pickle Lake, a township located in Onterio Canada,
+                    Where All Roads begin blends the unique and emotion enriched experience into 9 songs. Whether its from take-off, soring through
+                    northern light filled skys, or watching the snow fall on the runway.
+                </p>
+            </div>
+        </section>
+        <section class="row-section">
+            <div class="bnt-col">
+                <a href="https://cybercatblues.com/assets/webp/exit.webp" id="listen-btn" class="listen-btn"><span>On YouTube Music</span></a>
+                <a href="https://cybercatblues.com/assets/webp/exit.webp" id="listen-btn" class="listen-btn"><span>On Qobuz</span></a>
+                <a href="https://cybercatblues.com/assets/webp/exit.webp" id="listen-btn" class="listen-btn"><span>On Apple Music</span></a>
+                <a href="https://cybercatblues.com/assets/webp/exit.webp" id="listen-btn" class="listen-btn"><span>On Spotify</span></a>
+            </div>
+            <div class="bandcamp">
+                <!-- Desktop Bandcamp iframe -->
+                <iframe class="if-band" style="border: 0; width: 100rem; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=4035508964/size=large/bgcol=333333/linkcol=00aeff/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://liminallimits.bandcamp.com/album/first-walk">First Walk by Limina⅃Limits</a></iframe>
+                <!-- Mobile Bandcamp iframe -->
+                <iframe class="if-band-sm" style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=4035508964/size=small/bgcol=333333/linkcol=00aeff/transparent=true/" seamless><a href="https://liminallimits.bandcamp.com/album/first-walk">First Walk by Limina⅃Limits</a></iframe>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <p class="copyright">© Copyright 2026 - Liminal Limits under CyberCat Industries. All Rights Reserved</p>
+    </footer>
+    <script>
+        // Hamburger menu toggle
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu');
+        
+        if (hamburger) {
+            hamburger.addEventListener('click', function() {
+                navMenu.classList.toggle('active');
+            });
+        }
+        
+        // Close menu when a link is clicked
+        const navLinks = navMenu.querySelectorAll('a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                navMenu.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>

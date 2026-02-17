@@ -1,0 +1,59 @@
+/*Code for button styles*/
+
+.bnt-col {
+    background-color: aqua;
+    background-image: url("/assets/Firstwalk.png");
+    background-size: cover;
+    display: flex;
+    flex-direction: column; /* Stacks buttons vertically */
+    gap: 10px;               /* Adjust this number to get them closer or further */
+    align-items: center;    /* Centers buttons horizontally */
+    margin: 1%;
+    padding: 2% 2% 2% 2%;
+    border-radius: 15px;
+}
+
+
+/* Streaming Button Styles */
+
+#listen-btn {
+	padding: 2% 4% 4% 4%;
+	border-radius: 8px;
+    color: #fffafa;
+	font-size: 1rem;
+	font-weight: 400;
+	font-family: "Space Mono", monospace;
+	transition: all 0.4s;
+	display: inline-block;
+    align-content: center;
+    	/* From https://css.glass */
+	background: #2b2a2a89;
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(12.4px);
+	-webkit-backdrop-filter: blur(12.4px);
+-webkit-box-shadow: 4px 3px 15px 3px rgba(0,0,0,0.47); 
+box-shadow: 4px 3px 15px 3px rgba(0,0,0,0.47);
+}
+
+#listen-btn:hover {
+	transform: translateY(-5px) rotate(0.5deg) scale(1.05);
+    background-color: #a09f9fd8;
+    backdrop-filter: blur(12.4px);
+	-webkit-backdrop-filter: blur(12.4px);
+}
+
+.listen-btn {
+    display: flex;            /* Keeps icon and text in a row */
+    align-items: center;      /* This is the magic for vertical centering */
+    justify-content: center;  /* Centers everything horizontally */
+    
+    white-space: nowrap;      /* Prevents 'Music' from dropping to the next line */
+    gap: 12px;                /* Sets the exact distance between icon and text */
+    
+    /* Keep your existing padding/colors/etc */
+    padding: 10px 20px;
+    background-color: #292929;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
