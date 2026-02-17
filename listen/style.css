@@ -54,6 +54,8 @@
   font-style: italic;
 }
 
+
+
 /* Change highlight color for all text */
 ::selection {
   background: #00aeff; /* Highlight background color */
@@ -88,6 +90,15 @@ body {
   flex-direction: column;
   min-height: 100vh;
   overflow-x: hidden;
+}
+
+:root {
+	--ccb-blue: #00aeff;
+	--white: #ffffff;
+	--black: #03060A;
+	--color-success: #28a745;
+	--color-warning: #ffc107;
+	--color-error: #dc3545;
 }
 
 footer {
@@ -221,6 +232,19 @@ h2 {
   padding: 20px;
   text-align: center;
 }
+
+.row-section {
+  padding: 21px;
+  text-align: center;
+  background-color: #686868;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+}
+
 /*Div Types*/
 .alb-dis {
   margin: 0 20% 0 20%;
@@ -231,21 +255,25 @@ h2 {
 }
 
 .bandcamp {
-  margin: 0 20% 0 20%;
+  margin: 0 1% 0 1%;
   padding: 1% 1% 1% 1%;
-  background-color: gray;
+  background-color: rgba(48, 50, 48, 0);
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  align-items: flex-start; /* Changed from center to top-align */
+  justify-content: center;
+  gap: 10px;
 }
+
 
 /* iframe configs */
 .if-band {
-  margin: 0 auto;
-  margin: auto;
+  margin: 1%;
   max-width: 470px;
   border-radius: 15px 15px 15px 15px;
+  transition: all 0.4s;
 }
+
 
 /* Title slide-in animation */
 @keyframes slideInTitle {
@@ -273,8 +301,8 @@ h2 {
 @media (max-width: 768px) {
 /* iframe configs */
   .if-band {
-  max-height: 0px;
-  max-width: 0px;
+  max-height: 0px !important;
+  max-width: 0px !important;
 }
 }
 
