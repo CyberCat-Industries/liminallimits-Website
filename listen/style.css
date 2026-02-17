@@ -196,6 +196,14 @@ h2 {
   padding: 20px;
 }
 
+.smaller-norm {
+  font-family: "Space Mono", monospace;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  padding: 0 1%;
+}
+
 /*flipped text*/
 .flipped-text {
   display: inline-block;
@@ -213,6 +221,31 @@ h2 {
   padding: 20px;
   text-align: center;
 }
+/*Div Types*/
+.alb-dis {
+  margin: 0 20% 0 20%;
+  padding: 1% 1% 1% 1%;
+  border-radius: 15px;
+  background: rgb(128, 128, 128);
+
+}
+
+.bandcamp {
+  margin: 0 20% 0 20%;
+  padding: 1% 1% 1% 1%;
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* iframe configs */
+.if-band {
+  margin: 0 auto;
+  margin: auto;
+  max-width: 470px;
+  border-radius: 15px 15px 15px 15px;
+}
 
 /* Title slide-in animation */
 @keyframes slideInTitle {
@@ -227,7 +260,23 @@ h2 {
   }
 }
 
+/* remove mobile elemnts */
+@media (min-width: 768px) {
+/* iframe configs */
+  .if-band-sm {
+  max-height: 0px;
+  max-width: 0px;
+}
+}
 
+/* remove desktop elemnts */
+@media (max-width: 768px) {
+/* iframe configs */
+  .if-band {
+  max-height: 0px;
+  max-width: 0px;
+}
+}
 
 
 
@@ -324,6 +373,11 @@ h2 {
     padding: 10px;
     font-size: 1rem;
   }
+
+  /* iframe configs */
+  .if-band-sm {
+    color:#00aeff;
+}
 }
 
 @media (max-width: 480px) {
