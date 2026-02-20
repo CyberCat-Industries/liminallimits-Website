@@ -2,7 +2,8 @@
 .logo {
   width: 25%;
   height: auto;
-  margin: 20px auto;
+  margin-right: auto;
+  padding-left: 10%;
   display: block;
 }
 
@@ -16,6 +17,7 @@
       width: 40%;
       height: auto;
       margin: 20px auto;
+        padding-left: 0%;
       display: block;
     }
 }
@@ -26,6 +28,7 @@
       width: 60%;
       height: auto;
       margin: 20px auto;
+      padding-left: 0%;
       display: block;
     }
 }
