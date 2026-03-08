@@ -20,7 +20,7 @@ var x = setInterval(function() {
   var displayElement = document.getElementById("timer2");
   
   if (displayElement) {
-      displayElement.innerHTML = "It will be out very soon!";
+      displayElement.innerHTML = "It will be out soon!";
   }
 
   // If the count down is finished, write some text
