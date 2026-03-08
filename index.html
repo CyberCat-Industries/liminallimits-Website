@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Limina⅃Limits Music</title>
+    <meta name="keywords" content="liminallimits, music, Limina⅃Limits, release, upcoming" />
+    <meta property="og:title" content="Limina⅃Limits Music" />
+    <meta property="og:description" content="The space between within liminal spaces, through sound." />
     <meta property="og:image" content="https://liminallimits.com/assets/LL-logo(dark)-v1.svg" />
     <link rel="icon" href="https://liminallimits.com/assets/LL-logo(dark)-v1.svg" />
     <!-- Main CSS -->
@@ -11,8 +14,9 @@
     <!-- Image CSS -->
     <link rel="stylesheet" href="image-style.css">
     <script src="timer.js" defer></script>
+    <script src="timer2.js" defer></script>
 </head>
-<body>
+<body style="background-image: url('assets/color-mix1.webp'); background-size: contain; background-attachment: fixed;">
     <section>
         <div class="navbar">
             <h1>Limina<span class="flipped-text">L</span>Limits</h1>
@@ -26,13 +30,14 @@
         </div>
     </section>
     <main>
-        <section class="logo-section">
-            <img src="assets/LL-logo(dark)-v1.svg" alt="LiminaLimits Logo" class="logo">
+        <section class="logo-section" style="margin-top: 10%">
+            <img src="/assets/LL-logo(white-outline)-v1.svg" alt="LiminaLimits Logo" class="logo">
         </section>
         <section class="normal-section">
-            <h2 class="center-pro-h2">Upcoming Release: <span id="timer"></span></h2>
+            <h2 class="center-pro-h2" style="font-weight: 500;">The album will release in about <span id="timer"></span></h2>
             <div></div>
-            <p class="norm">Liminal Limits Music coming March 17th, 2026</p>
+            <p class="norm" id="timer2"></p>
+            <!--<p class="norm">____ is out now! Give it a <a href="https://liminallimits.com/listen">listen</a>.</p>-->
         </section>
 
     </main>

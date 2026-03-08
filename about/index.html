@@ -1,0 +1,91 @@
+<!--This Page is to assist in creating new pages. Make sure to read comments to follow the current 
+procedures for page creation. Comments, including this one, can be removed on launch sites-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Limina⅃Limits Music | About</title>
+    <meta name="keywords" content="liminallimits, music, listen, Limina⅃Limits, about, info, who" />
+    <meta property="og:title" content="Limina⅃Limits Music" />
+    <meta property="og:description" content="Creating the space between what is and what is not through experimental sounds, across landscapes." />
+    <meta property="og:image" content="https://liminallimits.com/assets/LL-logo(dark)-v1.svg" />
+    <link rel="icon" href="https://liminallimits.com/assets/LL-logo(dark)-v1.svg" />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="/style.css"> <!--For faster updates, all sites must use this link to the main CSS file-->
+    <!-- Page Style CSS -->
+    <link rel="stylesheet" href="/about/about-style.css">
+    <!-- Image CSS -->
+    <link rel="stylesheet" href="/image-style.css"> <!--This is not required, but is can make images easier to style and manage-->
+</head>
+<body>
+    <!--This code should not change unless for special pages-->
+    <section>
+        <div class="navbar">
+            <h1>Limina<span class="flipped-text">L</span>Limits</h1>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">☰</button>
+            <ul class="nav-link" id="navMenu">
+                <li><a href="https://liminallimits.com">Home</a></li>
+                <li><a href="https://liminallimits.com/listen">Listen</a></li>
+                <li><a href="https://liminallimits.com/contact.html">Contact</a></li>
+                <li><a href="https://liminallimits.com/about">About</a></li>
+            </ul>
+        </div>
+    </section>
+    <main>
+        <section class="image-section">
+            <img class="image-banner" src="/about/assets/about-page-banner.webp" alt="About page banner" class="about-banner-image">
+            <div class="image-text-overlay">
+                <h2 class="image-overlay-text">About Limina<span class="flipped-text">L</span>Limits</h2>
+            </div>
+        </section>
+
+        <!-- Main About Section -->
+        <section class="content-section">
+            <div class="image-box">
+                <img src="/about/assets/about-main.webp" alt="About main section" />
+            </div>
+            <div class="content-text">
+                <h3>About</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </div>
+        </section>
+
+        <!-- Gear Section (Reversed) -->
+        <section class="content-section reversed">
+            <div class="image-box">
+                <img src="/about/assets/about-gear.webp" alt="Gear section" />
+            </div>
+            <div class="content-text">
+                <h3>Gear I Use</h3>
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</p>
+                <p>Laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <p class="copyright">© Copyright 2026 - Liminal Limits under CyberCat Industries. All Rights Reserved</p>
+    </footer>
+    <script>
+        // Hamburger menu toggle
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu');
+        
+        if (hamburger) {
+            hamburger.addEventListener('click', function() {
+                navMenu.classList.toggle('active');
+            });
+        }
+        
+        // Close menu when a link is clicked
+        const navLinks = navMenu.querySelectorAll('a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                navMenu.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
