@@ -1,0 +1,479 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Tomorrow:ital,wght@0,200;0,300;0,400;1,200;1,300&display=swap');
+
+/*fonts*/
+.tomorrow-extralight {
+  font-family: "Tomorrow", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.tomorrow-light {
+  font-family: "Tomorrow", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.tomorrow-regular {
+  font-family: "Tomorrow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.tomorrow-extralight-italic {
+  font-family: "Tomorrow", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.tomorrow-light-italic {
+  font-family: "Tomorrow", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+.space-mono-regular {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.space-mono-bold {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.space-mono-regular-italic {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.space-mono-bold-italic {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: italic;
+}
+
+
+
+/* Change highlight color for all text */
+::selection {
+  background: #00aeff; /* Highlight background color */
+  color: #000000;         /* Text color when highlighted */
+}
+
+/* For Firefox */
+::-moz-selection {
+  background: #00aeff;
+  color: #000;
+}
+
+
+/*Main Page*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+  font-size: 16px;
+}
+
+body {
+  font-family: "Tomorrow", sans-serif;
+  background-color: #000000;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+:root {
+	--ccb-blue: #00aeff;
+	--white: #ffffff;
+	--black: #03060A;
+	--color-success: #28a745;
+	--color-warning: #ffc107;
+	--color-error: #dc3545;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  background-color: #1f1f20;
+  margin-top: auto;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  font-family: "Tomorrow", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  color: #ffffff;
+  transition: color 0.5s ease-in;
+  margin-left: 1%;
+}
+
+h1:hover {
+  color: #00aeff;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-family: "Tomorrow", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #00aeff;
+}
+
+.norm {
+  font-family: "Space Mono", monospace;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  padding: 0 1%;
+}
+/*navbar*/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 15px;
+  background-color: #201f1f;
+  border-radius: 15px;
+  margin: 1%;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  gap: 20px;
+}
+
+.navbar h1 {
+  flex: 1;
+  margin: 0 !important;
+  padding: 0;
+  white-space: nowrap;
+  animation: slideInTitle 0.8s ease-out forwards;
+}
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 5px 10px;
+  transition: color 0.3s;
+}
+
+.hamburger:hover {
+  color: #00aeff;
+}
+
+.nav-link {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link li {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link a {
+  color: #ffffff;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: color 0.3s ease-in;
+}
+
+.nav-link a:hover {
+  color: #00aeff;
+}
+
+/*text alt styles*/
+.center-pro-h2 {
+  text-align: center;
+  padding: 20px;
+}
+
+.smaller-norm {
+  font-family: "Space Mono", monospace;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  padding: 0 1%;
+}
+
+/*flipped text*/
+.flipped-text {
+  display: inline-block;
+  /* Required for transform to work */
+  transform: scaleX(-1);
+  /* Flips it horizontally */
+}
+
+/*Sections Types*/
+.normal-section {
+  padding: 20px;
+  text-align: center;
+}
+.logo-section {
+  padding: 20px;
+  text-align: center;
+}
+
+.row-section {
+  padding: 21px;
+  text-align: center;
+  background-color: #686868;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+}
+
+/*Div Types*/
+.alb-dis {
+  margin: 0 20% 0 20%;
+  padding: 1% 1% 1% 1%;
+  border-radius: 15px;
+  background: rgb(128, 128, 128);
+
+}
+
+.bandcamp {
+  margin: 0 1% 0 1%;
+  padding: 1% 1% 1% 1%;
+  background-color: rgba(48, 50, 48, 0);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start; /* Changed from center to top-align */
+  justify-content: center;
+  gap: 10px;
+}
+
+
+/* iframe configs */
+.if-band {
+  margin: 1%;
+  max-width: 470px;
+  border-radius: 15px 15px 15px 15px;
+  transition: all 0.4s;
+}
+
+
+/* Title slide-in animation */
+@keyframes slideInTitle {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* remove mobile elemnts */
+@media (min-width: 768px) {
+/* iframe configs */
+  .if-band-sm {
+  max-height: 0px;
+  max-width: 0px;
+}
+}
+
+/* remove desktop elemnts */
+@media (max-width: 768px) {
+/* iframe configs */
+  .if-band {
+  max-height: 0px !important;
+  max-width: 0px !important;
+}
+}
+
+
+
+
+/* Responsive font sizes for smaller screens */
+@media (max-width: 1024px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 13px;
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin-left: 0 !important;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .navbar {
+    gap: 10px;
+  }
+
+  .hamburger {
+    display: block;
+    order: 2;
+  }
+
+  .navbar h1 {
+    order: 1;
+    flex: 1;
+  }
+
+  .nav-link {
+    order: 3;
+    width: 100%;
+
+    /* 1. ANIMATION INITIAL STATE */
+    opacity: 0;
+    /* Invisible */
+    visibility: hidden;
+    /* Keeps it from being clickable while invisible */
+    transform: translateY(-20px);
+    /* Start it 20px higher up */
+    transition: all 0.4s ease-in-out;
+    /* The speed of the animation */
+
+    /* 2. LAYOUT & POSITIONING */
+    display: flex;
+    /* Keep this as flex ALWAYS */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    padding: 15px;
+    margin-top: 5px;
+    gap: 8px;
+    border-radius: 15px;
+    z-index: 1000;
+
+    /* 3. YOUR GLASS STYLING */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(12.1px);
+    -webkit-backdrop-filter: blur(12.1px);
+    background: rgba(32, 31, 31, 0.8);
+    /* Added semi-transparent bg for glass effect */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  /* 4. THE ANIMATION ACTIVE STATE */
+  .nav-link.active {
+    opacity: 1;
+    /* Fade in */
+    visibility: visible;
+    /* Make it clickable */
+    transform: translateY(0);
+    /* Slide down to original position */
+  }
+
+  .nav-link li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-link a {
+    display: block;
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  /* iframe configs */
+  .if-band-sm {
+    color:#00aeff;
+}
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 11px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    margin-left: 0 !important;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  .navbar {
+    margin: 5px;
+    padding: 8px 12px;
+    gap: 8px;
+  }
+
+  .hamburger {
+    font-size: 1.2rem;
+    padding: 5px 8px;
+  }
+
+  .nav-link {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-right: 50px;
+    gap: 8px;
+    border-radius: 15px 15px 15px 15px;
+    /* From https://css.glass */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(12.1px);
+    -webkit-backdrop-filter: blur(12.1px);
+    border: 1px solid rgba(0, 0, 0, 0.37);
+  }
+
+  .nav-link li {
+    width: 100%;
+  }
+
+  .nav-link a {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+
+  .center-pro-h2 {
+    padding: 15px 10px;
+  }
+
+  main section {
+    padding: 10px;
+  }
+
+  p {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  footer {
+    padding: 15px 10px;
+  }
+}
