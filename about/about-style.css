@@ -61,6 +61,19 @@
 }
 
 .image-box img {
+  width: 70%;
+  height: auto;
+  border-radius: 15px;
+  object-fit: cover;
+  display: block;
+}
+
+.image-box2 {
+  flex: 1;
+  min-width: 0;
+}
+
+.image-box2 img {
   width: 100%;
   height: auto;
   border-radius: 15px;
@@ -117,6 +130,14 @@
 
   .image-box {
     width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .image-box2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
   .content-text h3 {
@@ -132,6 +153,16 @@
   .content-section {
     padding: 30px 15px;
     gap: 20px;
+  }
+
+  .image-box {
+    display: flex;
+    justify-content: center;
+  }
+
+  .image-box2 {
+    display: flex;
+    justify-content: center;
   }
 
   .content-text h3 {
