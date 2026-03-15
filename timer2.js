@@ -27,7 +27,7 @@ var x = setInterval(function() {
   if (distance < 0) {
     clearInterval(x);
     if (displayElement) {
-        displayElement.innerHTML = "_____ is out now on bandcamp! Give it a <a style=\"color: #00aeff;\" href=\"https://liminallimits.com/listen\">listen</a>.";
+        displayElement.innerHTML = "<b>Where all Roads Begin</b> is out now on streaming platforms! Give it a <a style=\"color: #00aeff;\" href=\"https://liminallimits.com/listen\">listen</a>.";
     }
   }
 }, 1000);
