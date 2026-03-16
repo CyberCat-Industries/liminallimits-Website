@@ -1,0 +1,87 @@
+<!--About Page-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Limina⅃Limits Music | About</title>
+    <meta name="keywords" content="liminallimits, music, listen, Limina⅃Limits, about, info, who, gear" />
+    <meta property="og:title" content="Limina⅃Limits Music" />
+    <meta property="og:description" content="Creating the space between what is and what is not through experimental sounds, across landscapes." />
+    <meta property="og:image" content="https://liminallimits.com/assets/LL-logo(dark)-v1.svg" />
+    <link rel="icon" href="https://liminallimits.com/assets/LL-logo(dark)-v1.svg" />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="/style.css">
+    <!-- Page Style CSS -->
+    <link rel="stylesheet" href="/about/about-style.css">
+</head>
+<body>
+    <section>
+        <div class="navbar">
+            <h1>Limina<span class="flipped-text">L</span>Limits</h1>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">☰</button>
+            <ul class="nav-link" id="navMenu">
+                <li><a href="https://liminallimits.com">Home</a></li>
+                <li><a href="https://liminallimits.com/listen">Listen</a></li>
+                <li><a href="https://liminallimits.com/contact.html">Contact</a></li>
+                <li><a href="https://liminallimits.com/about">About</a></li>
+            </ul>
+        </div>
+    </section>
+    <main>
+        <section class="image-section">
+            <img class="image-banner" src="/about/assets/about-page-banner.webp" alt="About page banner" class="about-banner-image">
+            <div class="image-text-overlay">
+                <h2 class="image-overlay-text">About Limina<span class="flipped-text">L</span>Limits</h2>
+            </div>
+        </section>
+
+        <!-- Main About Section -->
+        <section class="content-section">
+            <div class="image-box">
+                <img src="/assets/LL-logo(white-outline)-v1.svg" alt="About main section" />
+            </div>
+            <div class="content-text">
+                <h3>About</h3>
+                <p>Based in the state of Maine, Liminal Limits is an ambient/electronic music project that explores the space between what is and what is not through experimental sounds and across landscapes.</p>
+                <p>All composition are written and produced by Kaeden G. Fasinated by the intersection of technological advancemnt and mystical realism.</p>
+            </div>
+        </section>
+
+        <!-- Gear Section (Reversed) -->
+        <section class="content-section reversed">
+            <div class="image-box2">
+                <img src="/about/assets/about-gear2.webp" alt="Gear section" />
+            </div>
+            <div class="content-text">
+                <h3>Gear/Instruments Used</h3>
+                <p>While some other instruments make appearances on occasion, there are a few main ones. For midi controllers, I use both the Arturia KeyLab mk3 61 key and the RadioShack MD-1121.</p>
+                <p>For a microphone, I use the Elgato Wave 3 and for music software, I primarily use Logic Pro with various instrument and effect plugins added.</p>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <p class="copyright">© 2026 Liminal Limits. A division of CyberCat Sounds and CyberCat Industries. All Rights Reserved.</p>
+    </footer>
+    <script>
+        // Hamburger menu toggle
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu');
+        
+        if (hamburger) {
+            hamburger.addEventListener('click', function() {
+                navMenu.classList.toggle('active');
+            });
+        }
+        
+        // Close menu when a link is clicked
+        const navLinks = navMenu.querySelectorAll('a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                navMenu.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>

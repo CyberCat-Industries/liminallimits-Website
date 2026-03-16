@@ -27,7 +27,7 @@ var x = setInterval(function() {
   if (distance < 0) {
     clearInterval(x);
     if (displayElement) {
-        displayElement.innerHTML = "Release Day!";
+        displayElement.innerHTML = "Now!";
     }
   }
 }, 1000);
