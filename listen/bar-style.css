@@ -4,7 +4,7 @@
   justify-content: center;
   gap: 12px;
   padding: 10px 16px;
-  margin: 0 1% 0.75rem;
+  margin: 10% 1% 0.75rem;
   background: linear-gradient(90deg, #ff7403, #ff0000);
   color: #060606;
   border-radius: 12px;
@@ -31,4 +31,20 @@
 
 .warning-close:hover {
   color: #000000;
+}
+
+@media (max-width: 768px) {
+    .warning-bar {
+        font-size: 0.9rem;
+        padding: 8px 14px;
+        margin: 15% 1% 0.75rem;
+    }
+    }
+
+@media (max-width: 480px) {
+    .warning-bar {
+        font-size: 0.85rem;
+        padding: 8px 12px;
+        margin: 20% 1% 0.75rem;
+    }
 }

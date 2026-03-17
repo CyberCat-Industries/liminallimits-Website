@@ -155,10 +155,12 @@ h2 {
   background-color: #201f1f;
   border-radius: 15px;
   margin: 1%;
-  position: sticky;
+  position: fixed;
+  width: 98.5%;
   top: 0;
   z-index: 100;
   gap: 20px;
+  box-shadow: 5px 5px 15px 5px #000000;
 }
 
 .navbar h1 {
