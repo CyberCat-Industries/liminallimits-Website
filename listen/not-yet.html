@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LiminaL Limits Music | Not Yet Available Here</title>
+    <meta name="description" content="This streaming service is not yet available!" />
+    <meta property="og:image" content="https://liminallimits.com/assets/LL-logo(dark)-v1.svg" />
+    <link rel="icon" href="https://liminallimits.com/assets/LL-logo(dark)-v1.svg" />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="/style.css">
+</head>
+<style>
+    .button {
+    display: inline-block;
+    background-color: #00aeff;
+    color: #000000;
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    font-family: "Tomorrow", sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    margin: 20px 0 40px 0;
+    border: 2px solid #00aeff;
+    cursor: pointer;
+    }
+    .button:hover {
+    background-color: #0099dd;
+    border-color: #0099dd;
+    transform: scale(1.05);
+    }
+
+    .button:active {
+    transform: scale(0.95);
+    }
+</style>
+<body>
+    <section>
+        <div class="navbar">
+            <h1>Limina<span class="flipped-text">L</span>Limits</h1>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">☰</button>
+            <ul class="nav-link" id="navMenu">
+                <li><a href="https://liminallimits.com">Home</a></li>
+                <li><a href="https://liminallimits.com/listen">Listen</a></li>
+                <li><a href="https://liminallimits.com/contact.html">Contact</a></li>
+                <li><a href="https://liminallimits.com/about">About</a></li>
+            </ul>
+        </div>
+    </section>
+    <main>
+        <section class="normal-section" style="margin-top: 8%;">
+            <h2 class="center-pro-h2">Uh Oh! You can't stream here just yet!</h2>
+            <p class="norm">It looks like you clicked on a streaming service that isn't available yet. Check back soon!</p>
+                <a href="https://liminallimits.com/listen" class="button">
+                    Go Back
+                </a>
+        </section>
+
+    </main>
+    <footer>
+        <p class="copyright">© 2026 Liminal Limits. A division of CyberCat Sounds and CyberCat Industries. All Rights Reserved.</p>
+    </footer>
+    <script>
+        // Hamburger menu toggle
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu');
+        
+        if (hamburger) {
+            hamburger.addEventListener('click', function() {
+                navMenu.classList.toggle('active');
+            });
+        }
+        
+        // Close menu when a link is clicked
+        const navLinks = navMenu.querySelectorAll('a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                navMenu.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
