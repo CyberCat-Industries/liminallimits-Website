@@ -39,4 +39,4 @@ function clearWarning() {
 warningClose.addEventListener('click', clearWarning);
 
 // Example: Editable message text below, or call setWarning(...) from other scripts
-setWarning('Streaming on some platforms may not be available yet. Come back later or check out Bandcamp!');
+setWarning('Some Streaming Services may not be available quite yet. Check back later if your service is unavailable!');
