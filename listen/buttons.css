@@ -1,0 +1,83 @@
+/*Code for button styles*/
+
+.bnt-col {
+    background-color: rgba(20, 24, 30, 0.65);
+    background-image: none;
+    display: flex;
+    flex-direction: column; /* Stacks buttons vertically */
+    gap: 14px;               /* Adjust this number to get them closer or further */
+    align-items: flex-start; /* Align buttons to left edge */
+    margin: 1%;
+    padding: 2% 2% 2% 2%;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+
+/* Streaming Button Styles */
+
+#listen-btn,
+.listen-btn {
+	width: 100%;
+	max-width: 420px;
+	padding: 16px 28px;
+	border-radius: 12px;
+    color: #ffffff;
+	font-size: 1.15rem;
+	font-weight: 600;
+	font-family: "Space Mono", monospace;
+	transition: transform 0.25s ease, background 0.25s ease, border-color 0.25s ease;
+	display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+	background: rgba(255, 255, 255, 0.08);
+	border: 1px solid rgba(255, 255, 255, 0.25);
+	box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+	text-decoration: none;
+}
+
+#listen-btn:hover,
+.listen-btn:hover {
+	transform: translateY(-3px);
+    background-color: rgba(255, 255, 255, 0.14);
+    border-color: rgba(255, 255, 255, 0.45);
+}
+
+#listen-btn:active,
+.listen-btn:active {
+    transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+    .bnt-col {
+        align-items: stretch;
+        padding: 16px 8px;
+    }
+
+    #listen-btn,
+    .listen-btn {
+        max-width: 100%;
+        width: 100%;
+        padding: 14px 18px;
+        font-size: 1rem;
+        justify-content: center;
+    }
+
+    #listen-btn span,
+    .listen-btn span {
+        text-decoration: none;
+    }
+
+    .album-art {
+        margin: 0 auto 14px;
+        max-width: 90%;
+    }
+
+    .album-art img {
+        height: auto;
+        width: 100%;
+    }
+}
+
