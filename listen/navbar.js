@@ -1,21 +1,3 @@
-// Hamburger menu toggle
-const hamburger = document.getElementById('hamburger');
-const navMenu = document.getElementById('navMenu');
-
-if (hamburger) {
-    hamburger.addEventListener('click', function () {
-        navMenu.classList.toggle('active');
-    });
-}
-
-// Close menu when a link is clicked
-const navLinks = navMenu.querySelectorAll('a');
-navLinks.forEach(link => {
-    link.addEventListener('click', function () {
-        navMenu.classList.remove('active');
-    });
-});
-
 // Configurable warning bar behavior
 const warningBar = document.getElementById('warningBar');
 const warningText = document.getElementById('warningText');
