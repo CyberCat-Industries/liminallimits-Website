@@ -17,8 +17,27 @@
     <link rel="stylesheet" href="home-button.css">
     <!-- <script src="timer.js" defer></script> -->
     <!--<script src="timer2.js" defer></script> -->
+    
+    <!-- Inline CSS for background image -->
+    <style>
+        body {
+            min-height: 100vh;
+            margin: 0;
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                background-attachment: scroll;
+            }
+        }
+    </style>
 </head>
-<body style="background-image: url('assets/color-mix1.webp'); background-size: contain; background-attachment: fixed;">
+
+<body style="background-image: url('about/assets/about-gear2.webp');">
     <section>
         <div class="navbar">
             <h1>Limina<span class="flipped-text">L</span>Limits</h1>
@@ -35,8 +54,8 @@
         <section class="logo-section" style="margin-top: 10%">
             <img src="/assets/LL-logo(white-outline)-v1.svg" alt="LiminaLimits Logo" class="logo">
         </section>
-        <section class="normal-section">
-            <h2 class="center-pro-h2" style="font-weight: 500;">Music that sits on the edge of liminal</span></h2>
+        <section class="normal-section" style="padding-top: 0px;">
+            <h2 class="center-pro-h2" style="font-weight: 700; font-size: 2.5rem;">Music that sits on the edge of liminal</span></h2>
             <div></div>
             <a href="https://liminallimits.com/listen" class="button-h">Listen Now</a>
         </section>

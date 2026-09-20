@@ -195,7 +195,8 @@ h2 {
 /*text alt styles*/
 .center-pro-h2 {
   text-align: center;
-  padding: 20px;
+  color: #00aa60;
+  padding: 10px;
 }
 
 .copyright {
