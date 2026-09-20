@@ -153,6 +153,11 @@ h2 {
   animation: slideInTitle 0.8s ease-out forwards;
 }
 
+.navbar h1 a {
+  color: inherit;
+  text-decoration: none;
+}
+
 .hamburger {
   display: none;
   background: none;
@@ -195,7 +200,6 @@ h2 {
 /*text alt styles*/
 .center-pro-h2 {
   text-align: center;
-  color: #00aa60;
   padding: 10px;
 }
 
